@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context=".MainActivity4">
+
+    <WebView
+        android:id="@+id/webView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:layout_marginTop="150dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:translationY="-100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/readclient">
+
+
+    </WebView>
+
+    <Button
+        android:id="@+id/readclient"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#4472C4"
+        android:text="@string/drone_radio_portal"
+
+
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TextContrastCheck"
+        tools:layout_editor_absoluteX="8dp" />
+
+    <Button
+        android:id="@+id/nav"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="90dp"
+        android:layout_marginBottom="25dp"
+        android:text="@string/home"
+        android:textAllCaps="false"
+        android:backgroundTint="#4472C4"
+        android:textColor="@color/white"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="TextContrastCheck,DuplicateSpeakableTextCheck" />
+
+    <Button
+        android:id="@+id/nav2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginBottom="25dp"
+        android:backgroundTint="#4472C4"
+        android:text="@string/gcs_radio_"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/nav" />
+
+
+    <Button
+        android:id="@+id/nav3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginBottom="25dp"
+        android:backgroundTint="#4472C4"
+        android:text="@string/drone_radio_"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/nav2" />
+
+    <Button
+        android:id="@+id/nav4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginBottom="25dp"
+        android:text="@string/_help"
+        android:textAllCaps="false"
+        android:backgroundTint="#4472C4"
+        android:textColor="@color/white"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/nav3"
+        tools:ignore="TextContrastCheck,DuplicateSpeakableTextCheck" />
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="600dp"
+        android:layout_height="80dp"
+        android:layout_marginBottom="9dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/navigation_bar_3"
+        android:contentDescription="@string/img11" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
