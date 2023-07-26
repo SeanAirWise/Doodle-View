@@ -3,9 +3,12 @@ package com.example.doodleview;
 import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Intent;
-import android.content.SharedPreferences;
+import android.net.ConnectivityManager;
+import android.net.Network;
 import android.net.http.SslError;
 import android.os.Bundle;
+import android.os.Handler;
+import android.provider.Settings;
 import android.view.KeyEvent;
 import android.view.View;
 import android.webkit.SslErrorHandler;
@@ -17,20 +20,22 @@ import android.widget.Button;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.preference.PreferenceManager;
 
 public class MainActivity4 extends AppCompatActivity {
 
 
     private WebView webView;
+
+
     @SuppressLint("SetJavaScriptEnabled")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main4);
 
+
         // Navigation --Menu Buttons
-        Button btn1 = (Button)findViewById(R.id.nav);
+        Button btn1 = (Button) findViewById(R.id.nav);
         btn1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -56,24 +61,23 @@ public class MainActivity4 extends AppCompatActivity {
         btn4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(MainActivity4.this, MainActivity4.class));
+                startActivity(new Intent(MainActivity4.this, MainActivity5.class));
             }
         });
 
 
-
-
         //Toast Display the IP value
-        Toast.makeText(getApplicationContext(), "Doodle Labs Support", Toast.LENGTH_LONG).show();
+        Toast.makeText(getApplicationContext(), "Back Up Radio IP", Toast.LENGTH_LONG).show();
 
 
-        CustomWebViewClient client= new CustomWebViewClient(this);
-        webView =findViewById(R.id.webView);
+
+        webView = findViewById(R.id.webView);
+        CustomWebViewClient client = new CustomWebViewClient(this);
         webView.setWebViewClient(client);
         webView.setWebChromeClient(new WebChromeClient());
         webView.getSettings().setJavaScriptEnabled(true);
-        //webView.loadUrl("http://192.168.6.2/ide.html");
-        webView.loadUrl("http://doodlelabs.com/technical-support/");
+        webView.loadUrl("https://192.168.153.1");
+        //webView.loadUrl("http://doodlelabs.com/technical-support/");
         //webView.loadUrl ("http://" + value.toString());
         //webView.loadUrl ("https://" + value2);
         webView.getSettings().setAllowFileAccess(true);
@@ -86,14 +90,19 @@ public class MainActivity4 extends AppCompatActivity {
 
         //webView.getSettings().setAppCacheEnabled(false);
         webView.getSettings().setCacheMode(WebSettings.LOAD_NO_CACHE);
-
         webView.getSettings().setUseWideViewPort(true);
         webView.getSettings().setLoadWithOverviewMode(true);
         webView.getSettings().setBuiltInZoomControls(true);
         webView.setInitialScale(1);
 
 
-    }
+        }
+
+
+
+
+
+
 
 
 
@@ -109,7 +118,11 @@ public class MainActivity4 extends AppCompatActivity {
     }
 }
 
-class CustomWebViewClient3 extends WebViewClient {
+
+
+
+
+    class CustomWebViewClient3 extends WebViewClient {
 
     private Activity activity;
 

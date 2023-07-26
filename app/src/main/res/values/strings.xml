@@ -83,4 +83,27 @@
     <string name="imgv">imgV</string>
     <string name="ground_control_radio">Ground Control Radio</string>
     <string name="drone_radio_type">Drone Radio</string>
+    <string name="drone_ip_to_connect">Drone IP to Connect</string>
+    <string name="radio_frequency">Radio Frequency</string>
+    <string name="radio_freq">Radio Frequency</string>
+    <string name="backup_ip">Backup IP</string>
+    <string name="ground_control_ip_">Ground Control IP</string>
+    <string name="example">Example</string>
+    <string name="backup_radio_ip_192_168_153_1">Backup Radio IP -- 192.168.153.1</string>
+    <string name="backup_radio_ip_192_168_153_1_">Backup Radio IP = 192.168.153.1</string>
+    <string name="_back_up_radio_ip_192_168_153_1">Back Up Radio IP --- 192.168.153.1</string>
+    <string name="back_up_ip">Back Up IP</string>
+    <string name="static_ip">TODO</string>
+    <string name="static_ip_example">TODO</string>
+    <string name="static_ip_exp">TODO</string>
+    <string name="to_set_radio_back_up_static_ip">To Set Radio Back Up Static IP</string>
+    <string name="set_device_static_ip_to_radio_backup_ip">Set Device Static IP to Radio Backup IP</string>
+    <string name="connect_device_static_ip_to_radio_backup_ip">Connect Device Static IP to Radio Backup IP</string>
+    <string name="tether_android_device_static_ip_to_radio_backup_ip">Tether Android Device Static IP to Radio Backup IP</string>
+    <string name="connect_android_device_static_ip_to_radio_backup_ip">Connect Android Device Static IP to Radio Backup IP</string>
+    <string name="settings_connections_more_connection_settings_ethernet_configure_ethernet_device_static_ip"><![CDATA[Settings --> Connections --> More Connection Settings --> Ethernet --> Configure Ethernet Device --> Static IP]]></string>
+    <string name="backup_radio_ip_192_168_153_1__">Backup Radio IP --- 192.168.153.1</string>
+    <string name="backup_ip_">Backup IP</string>
+    <string name="example_device_static_ip_for_backup_radio_portal">Example Device Static IP for Backup Radio Portal</string>
+    <string name="backup_radio_ip_portal">Backup Radio IP Portal</string>
 </resources>

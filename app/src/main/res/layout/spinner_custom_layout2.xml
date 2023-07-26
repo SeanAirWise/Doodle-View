@@ -16,9 +16,9 @@
         android:id="@+id/textView"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
         android:paddingLeft="10dp"
         android:paddingRight="10dp"
-        android:layout_gravity="center"
         android:text="@string/custom_text"
         android:textColor="#000" />
 
