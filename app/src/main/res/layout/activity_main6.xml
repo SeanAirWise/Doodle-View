@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1B1B50"
+    tools:context=".MainActivity6">
+
+
+    <Button
+        android:id="@+id/nav10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="90dp"
+        android:layout_marginBottom="120dp"
+        android:backgroundTint="#222222"
+        android:text="@string/swarm_awareness_kit"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="TextContrastCheck,DuplicateSpeakableTextCheck" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:alpha="1"
+        android:background="#222222"
+        android:contentDescription="@string/doodleviewlogo"
+        android:scaleType="fitStart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/sak_header2" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginBottom="9dp"
+        android:alpha="1"
+        android:background="@drawable/doodle_view_logo_removebg_preview"
+
+
+        android:contentDescription="@string/view_logo"
+        android:elevation="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="-30dp"
+        android:alpha=".9"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5"
+        app:srcCompat="@drawable/rectangle_1" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="230dp"
+        android:layout_height="60dp"
+        android:background="#626270"
+        android:fontFamily="sans-serif-thin"
+        android:gravity="center"
+        android:paddingHorizontal="25dp"
+        android:text="@string/select_tool"
+        android:textAlignment="textStart"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/imageView5"
+        app:layout_constraintTop_toTopOf="@+id/imageView5" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="90dp"
+        android:background="#626270"
+        android:clickable="true"
+        android:contextClickable="true"
+        android:cursorVisible="true"
+        android:fontFamily="sans-serif-thin"
+        android:gravity="center"
+        android:paddingStart="90dp"
+        android:text="@string/mesh_map"
+        android:textAlignment="textStart"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/imageView5"
+        app:layout_constraintStart_toStartOf="@+id/imageView5"
+        app:layout_constraintTop_toTopOf="@+id/imageView5" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="15dp"
+        android:background="#626270"
+        android:clickable="true"
+        android:contextClickable="true"
+        android:cursorVisible="true"
+        android:fontFamily="sans-serif-thin"
+        android:gravity="center"
+        android:paddingStart="90dp"
+        android:text="@string/suas_swarms"
+        android:textAlignment="textStart"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/imageView5"
+        app:layout_constraintStart_toStartOf="@+id/imageView5"
+        app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="15dp"
+        android:background="#626270"
+        android:clickable="true"
+        android:contextClickable="true"
+        android:cursorVisible="true"
+        android:fontFamily="sans-serif-thin"
+        android:gravity="center"
+        android:paddingStart="90dp"
+        android:text="@string/flightmanager"
+        android:textAlignment="textStart"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/imageView5"
+        app:layout_constraintStart_toStartOf="@+id/imageView5"
+        app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:fontFamily="sans-serif"
+        android:gravity="center"
+        android:paddingHorizontal="14sp"
+        android:text="@string/doodle_view_android_v1_21_by_airwise_solutions"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="13sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView5"
+        app:layout_constraintEnd_toEndOf="@+id/imageView5"
+        app:layout_constraintStart_toStartOf="@+id/imageView5" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:background="#838391"
+        android:fontFamily="sans-serif-thin"
+        android:gravity="center"
+        android:text="@string/close"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/textView6"
+        app:layout_constraintTop_toTopOf="@+id/imageView5" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="10dp"
+        android:contentDescription="@string/FlightManager"
+        app:layout_constraintStart_toStartOf="@+id/textView13"
+        app:layout_constraintTop_toTopOf="@+id/textView13"
+        app:srcCompat="@drawable/mesh" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="-8dp"
+        android:contentDescription="@string/img7"
+        app:layout_constraintStart_toStartOf="@+id/textView14"
+        app:layout_constraintTop_toTopOf="@+id/textView14"
+        app:srcCompat="@drawable/swarm_modified" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="120dp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView5"
+        app:layout_constraintTop_toTopOf="@+id/textView15"
+        app:srcCompat="@drawable/awp_12761_01___logo_design_options___2021_v4_icon__1_" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="textView15,imageView2" />
+
+    <Button
+        android:id="@+id/nav_mesh"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+
+        android:alpha="0"
+        android:backgroundTint="#FFCA28"
+        android:checkable="true"
+        android:contextClickable="true"
+        android:cursorVisible="true"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        app:layout_constraintStart_toStartOf="@+id/textView13"
+        app:layout_constraintTop_toTopOf="@+id/textView13"
+        tools:visibility="visible" />
+
+    <Button
+        android:id="@+id/nav_flightmanager"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+
+        android:alpha="0"
+        android:backgroundTint="#FFCA28"
+        android:checkable="true"
+        android:contextClickable="true"
+        android:cursorVisible="true"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        app:layout_constraintStart_toStartOf="@+id/textView13"
+        app:layout_constraintTop_toTopOf="@+id/textView15"
+        tools:visibility="visible" />
+
+    <Button
+        android:id="@+id/nav_swarm"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+
+        android:alpha="0"
+        android:backgroundTint="#FFCA28"
+        android:checkable="true"
+        android:contextClickable="true"
+        android:cursorVisible="true"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        app:layout_constraintStart_toStartOf="@+id/textView13"
+        app:layout_constraintTop_toTopOf="@+id/textView14"
+        tools:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="-30dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/awp_12761_01___logo_design_options___2021_v4_reversed__1_" />
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="250dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginBottom="23dp"
+        android:contentDescription="@string/img11"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/gray_box" />
+
+    <Button
+        android:id="@+id/nav9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="120dp"
+        android:layout_marginBottom="27dp"
+        android:backgroundTint="#4C7BD0"
+        android:text="@string/doodle_view"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="TextContrastCheck,DuplicateSpeakableTextCheck" />
+
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="250dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginBottom="116dp"
+        android:contentDescription="@string/img11"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/gray_box" />
+
+    <ImageButton
+        android:id="@+id/imageButton5"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="-10dp"
+
+
+        android:layout_marginBottom="94dp"
+        android:background="@drawable/sak_logo"
+        android:contentDescription="@string/view_logo2"
+        android:paddingVertical="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+
+
+

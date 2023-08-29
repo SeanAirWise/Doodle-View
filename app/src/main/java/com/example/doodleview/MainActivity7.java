@@ -26,7 +26,7 @@ import androidx.preference.PreferenceManager;
 import java.io.IOException;
 import java.io.InputStream;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity7 extends AppCompatActivity {
 
     //Button for for "QGC/MP Connect" (Copy to Clipboard)
     Button btnRead2;
@@ -59,7 +59,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_main7);
 
         //Saved Prefrences Spinner 1
         LastSelect=getSharedPreferences("LastSetting", Context.MODE_PRIVATE);
@@ -201,43 +201,7 @@ public class MainActivity extends AppCompatActivity {
 
 
         // Navigation -- Menu Buttons
-        Button btn = (Button) findViewById(R.id.nav);
-        btn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, MainActivity.class));
-            }
-        });
-        Button btn2 = (Button) findViewById(R.id.nav2);
-        btn2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, MainActivity2.class));
-            }
-        });
 
-        Button btn3 = (Button) findViewById(R.id.nav3);
-        btn3.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, MainActivity3.class));
-            }
-        });
-        Button btn4 = (Button) findViewById(R.id.nav4);
-        btn4.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, MainActivity4.class));
-            }
-        });
-
-        Button btn5 = (Button) findViewById(R.id.nav5);
-        btn5.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, MainActivity6.class));
-            }
-        });
 
 
 
@@ -247,7 +211,7 @@ public class MainActivity extends AppCompatActivity {
         btn6.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, MainActivity7.class));
+                startActivity(new Intent(MainActivity7.this, MainActivity.class));
                 v.setAlpha(1f);
             }
         });
@@ -256,7 +220,7 @@ public class MainActivity extends AppCompatActivity {
         btn8.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, MainActivity6.class));
+                startActivity(new Intent(MainActivity7.this, MainActivity6.class));
                 v.setAlpha(1f);
             }
         });
@@ -266,16 +230,16 @@ public class MainActivity extends AppCompatActivity {
         //  GCS + Drone IP SharedPreferences -- Saves user data input for GCS IP and Drone IP
         EditText editText = (EditText) findViewById(R.id.GroundControlInput);
         EditText editText2 = (EditText) findViewById(R.id.connecteddroneIP);
-        EditText editText103 = (EditText) findViewById(R.id.Username);
-        EditText editText104 = (EditText) findViewById(R.id.password);
-        EditText editText105 = (EditText) findViewById(R.id.encryptionkey);
+        EditText editText3 = (EditText) findViewById(R.id.Username);
+        EditText editText4 = (EditText) findViewById(R.id.password);
+        EditText editText5 = (EditText) findViewById(R.id.encryptionkey);
         final SharedPreferences prefs = PreferenceManager
                 .getDefaultSharedPreferences(this);
         editText.setText(prefs.getString("autoSave", ""));
         editText2.setText(prefs.getString("autoSave2", ""));
-        editText103.setText(prefs.getString("autoSave103", ""));
-        editText104.setText(prefs.getString("autoSave104", ""));
-        editText105.setText(prefs.getString("autoSave105", ""));
+        editText3.setText(prefs.getString("autoSave3", ""));
+        editText4.setText(prefs.getString("autoSave4", ""));
+        editText5.setText(prefs.getString("autoSave5", ""));
 
         Button btn9 = (Button) findViewById(R.id.nav6);
 
@@ -284,11 +248,11 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                prefs.edit().remove("autoSave105").apply();
+                prefs.edit().remove("autoSave5").apply();
 
                 editor.remove("LastClick5").apply();
                 editor.remove("LastClick6").apply();
-                startActivity(new Intent(MainActivity.this, MainActivity.class));
+                startActivity(new Intent(MainActivity7.this, MainActivity7.class));
 
             }
         });
@@ -329,11 +293,11 @@ public class MainActivity extends AppCompatActivity {
         });
 
         //Username Activity --
-        editText103.setText(prefs.getString("autoSave103", ""));
-        editText103.addTextChangedListener(new TextWatcher() {
+        editText3.setText(prefs.getString("autoSave3", ""));
+        editText3.addTextChangedListener(new TextWatcher() {
             @Override
             public void onTextChanged(CharSequence s, int start, int before, int count) {
-                prefs.edit().putString("autoSave103", s.toString()).apply();
+                prefs.edit().putString("autoSave3", s.toString()).apply();
             }
 
             @Override
@@ -346,11 +310,11 @@ public class MainActivity extends AppCompatActivity {
         });
 
         //Password Activity --
-        editText104.setText(prefs.getString("autoSave104", ""));
-        editText104.addTextChangedListener(new TextWatcher() {
+        editText4.setText(prefs.getString("autoSave4", ""));
+        editText4.addTextChangedListener(new TextWatcher() {
             @Override
             public void onTextChanged(CharSequence s, int start, int before, int count) {
-                prefs.edit().putString("autoSave104", s.toString()).apply();
+                prefs.edit().putString("autoSave4", s.toString()).apply();
             }
 
             @Override
@@ -363,11 +327,11 @@ public class MainActivity extends AppCompatActivity {
         });
 
         //Encryption Key Activity --
-        editText105.setText(prefs.getString("autoSave105", ""));
-        editText105.addTextChangedListener(new TextWatcher() {
+        editText5.setText(prefs.getString("autoSave5", ""));
+        editText5.addTextChangedListener(new TextWatcher() {
             @Override
             public void onTextChanged(CharSequence s, int start, int before, int count) {
-                prefs.edit().putString("autoSave105", s.toString()).apply();
+                prefs.edit().putString("autoSave5", s.toString()).apply();
             }
 
             @Override

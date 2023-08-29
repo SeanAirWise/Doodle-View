@@ -6,7 +6,7 @@
     android:id="@+id/linearLayout2"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity7">
 
 
     <Spinner
@@ -55,7 +55,7 @@
         android:id="@+id/readclient3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="175dp"
 
         android:backgroundTint="#4472C4"
         android:text="@string/qgroundcontrol_mission_planner_connect_drone_ip_copy_to_clipboard_"
@@ -74,7 +74,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
 
-        android:layout_marginTop="385dp"
+        android:layout_marginTop="700dp"
         android:backgroundTint="#4472C4"
 
         android:text="@string/encryption_key_copy_to_clipboard"
@@ -89,26 +89,27 @@
 
     <Button
         android:id="@+id/readclient2"
-        android:layout_width="350dp"
+        android:layout_width="250dp"
         android:layout_height="wrap_content"
-
-        android:layout_marginTop="-5dp"
+        android:layout_marginTop="500dp"
 
         android:backgroundTint="#4472C4"
-
         android:text="@string/login_username_copy_to_clipboard_"
 
         android:textAllCaps="false"
+
         android:textColor="@color/white"
+
         android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="@+id/readclient4"
-        app:layout_constraintTop_toTopOf="@+id/textView5"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toTopOf="parent"
         tools:ignore="TextContrastCheck" />
 
     <Button
         android:id="@+id/readclient4"
-        android:layout_width="350dp"
+        android:layout_width="250dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="500dp"
 
         android:backgroundTint="#4472C4"
 
@@ -117,21 +118,21 @@
         android:textAllCaps="false"
 
         android:textColor="@color/white"
+
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="@+id/encryptionkey"
-        app:layout_constraintTop_toTopOf="@+id/textView4"
+        app:layout_constraintEnd_toEndOf="@+id/textView5"
+        app:layout_constraintTop_toTopOf="parent"
         tools:ignore="TextContrastCheck" />
 
     <TextView
         android:id="@+id/textView8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="-360dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="15dp"
         android:text="@string/ground_control_ip_"
         android:textColor="@color/black"
-
         android:textSize="18sp"
+
         android:textStyle="bold"
         android:typeface="normal"
         app:layout_constraintEnd_toEndOf="parent"
@@ -144,7 +145,7 @@
         android:id="@+id/Username_"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
+        android:layout_marginTop="15dp"
         android:text="@string/username"
         android:textColor="@color/black"
 
@@ -159,14 +160,14 @@
         android:id="@+id/Encryption"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-
+        android:layout_marginTop="15dp"
         android:text="@string/encryption_type"
+
         android:textColor="@color/black"
         android:textSize="18sp"
         android:textStyle="bold"
         android:typeface="normal"
-        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintStart_toStartOf="@+id/readclient2"
         app:layout_constraintTop_toBottomOf="@+id/readclient5"
         tools:ignore="TextContrastCheck" />
 
@@ -176,7 +177,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="15dp"
 
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="15dp"
         android:text="@string/encryption_cipher"
         android:textColor="@color/black"
         android:textSize="18sp"
@@ -191,28 +192,29 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
 
+        android:layout_marginTop="30dp"
         android:text="@string/encryption_key"
         android:textColor="@color/black"
         android:textSize="18sp"
         android:textStyle="bold"
         android:typeface="normal"
-        app:layout_constraintStart_toEndOf="@+id/spinner7"
-        app:layout_constraintTop_toTopOf="@+id/textView16"
+        app:layout_constraintStart_toStartOf="@+id/Encryption"
+        app:layout_constraintTop_toBottomOf="@+id/spinner6"
         tools:ignore="TextContrastCheck" />
 
     <TextView
         android:id="@+id/password_"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
+        android:layout_marginTop="15dp"
         android:text="@string/password"
-
         android:textColor="@color/black"
+
         android:textSize="18sp"
         android:textStyle="bold"
         android:typeface="normal"
         app:layout_constraintStart_toStartOf="@+id/readclient4"
-        app:layout_constraintTop_toBottomOf="@+id/readclient4"
+        app:layout_constraintTop_toBottomOf="@+id/readclient2"
         tools:ignore="TextContrastCheck" />
 
     <TextView
@@ -248,15 +250,15 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="170dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="50dp"
         android:text="@string/ground_control_radio"
         android:textColor="@color/black"
-
         android:textSize="18sp"
+
         android:textStyle="bold"
         android:typeface="normal"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/textView8"
         app:layout_constraintTop_toBottomOf="@+id/readclient3"
         tools:ignore="TextContrastCheck" />
 
@@ -308,13 +310,13 @@
         android:autofillHints=""
         android:inputType="textUri"
         android:lines="1"
-
         android:maxLength="15"
+
         android:maxLines="1"
         android:minHeight="48dp"
         android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium"
         app:layout_constraintStart_toStartOf="@+id/password_"
-        app:layout_constraintTop_toBottomOf="@+id/password_"
+        app:layout_constraintTop_toBottomOf="@+id/Username_"
         tools:ignore="DuplicateSpeakableTextCheck,TextContrastCheck,TextFields" />
 
     <EditText
@@ -385,125 +387,31 @@
         tools:ignore="TextContrastCheck" />
 
     <Button
-        android:id="@+id/nav"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="90dp"
-        android:layout_marginBottom="25dp"
-        android:backgroundTint="#4472C4"
-        android:text="@string/home"
-        android:textAllCaps="false"
-        android:textColor="@color/white"
-
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="TextContrastCheck,DuplicateSpeakableTextCheck" />
-
-    <Button
         android:id="@+id/nav6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="25dp"
         android:backgroundTint="#4CAF50"
-
         android:text="@string/clear_key_data"
+
         android:textAllCaps="false"
         android:textColor="@color/white"
-        app:layout_constraintStart_toStartOf="@+id/textView17"
-        app:layout_constraintTop_toBottomOf="@+id/spinner7"
+        app:layout_constraintStart_toEndOf="@+id/spinner7"
+        app:layout_constraintTop_toBottomOf="@+id/readclient5"
         tools:ignore="TextContrastCheck,DuplicateSpeakableTextCheck" />
 
-    <Button
-        android:id="@+id/nav5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="90dp"
-        android:layout_marginBottom="120dp"
-        android:backgroundTint="#222222"
-        android:text="@string/swarm_awareness_kit"
-        android:textAllCaps="false"
-        android:textColor="@color/white"
-
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="TextContrastCheck,DuplicateSpeakableTextCheck" />
-
-    <Button
-        android:id="@+id/nav2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="15dp"
-        android:layout_marginBottom="25dp"
-        android:backgroundTint="#4472C4"
-        android:text="@string/gcs_radio_"
-        android:textAllCaps="false"
-        android:textColor="@color/white"
-
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/nav" />
-
-
-    <Button
-        android:id="@+id/nav3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="15dp"
-        android:layout_marginBottom="25dp"
-        android:backgroundTint="#4472C4"
-        android:text="@string/drone_radio_"
-        android:textAllCaps="false"
-        android:textColor="@color/white"
-
-
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/nav2" />
-
-    <Button
-        android:id="@+id/nav4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="15dp"
-        android:layout_marginBottom="25dp"
-        android:backgroundTint="#4472C4"
-        android:text="@string/backup_ip"
-        android:textAllCaps="false"
-        android:textColor="@color/white"
-
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/nav3"
-        tools:ignore="TextContrastCheck,DuplicateSpeakableTextCheck" />
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="wrap_content"
-        android:layout_height="100dp"
+        android:layout_height="200dp"
         android:layout_marginTop="-10dp"
         android:contentDescription="@string/doodleviewlogo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/dv_13" />
-
-    <ImageView
-        android:id="@+id/imageView11"
-        android:layout_width="600dp"
-        android:layout_height="80dp"
-        android:layout_marginBottom="9dp"
-        android:contentDescription="@string/img11"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/navigation_bar_3" />
-
-    <ImageView
-        android:id="@+id/imageView8"
-        android:layout_width="250dp"
-        android:layout_height="55dp"
-        android:layout_marginStart="70dp"
-        android:layout_marginBottom="116dp"
-        android:contentDescription="@string/img11"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/gray_box" />
 
     <Spinner
         android:id="@+id/spinner2"

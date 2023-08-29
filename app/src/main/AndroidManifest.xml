@@ -20,6 +20,47 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
 
+
+        <activity
+            android:name=".MainActivity10"
+            android:exported="true"
+            android:theme="@style/Theme.DoodleMate.NoActionBar">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".MainActivity9"
+            android:exported="true"
+            android:theme="@style/Theme.DoodleMate.NoActionBar">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".MainActivity8"
+            android:exported="true"
+            android:theme="@style/Theme.DoodleMate.NoActionBar">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".MainActivity7"
+            android:exported="true"
+            android:theme="@style/Theme.DoodleMate.NoActionBar">
+        <meta-data
+            android:name="android.app.lib_name"
+            android:value="" />
+        </activity>
+        <activity
+            android:name=".MainActivity6"
+            android:exported="true"
+            android:theme="@style/Theme.DoodleMate.NoActionBar">
+        <meta-data
+            android:name="android.app.lib_name"
+            android:value="" />
+        </activity>
         <activity
             android:name=".MainActivity5"
             android:exported="true"
@@ -28,7 +69,6 @@
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
-
         <activity
             android:name=".MainActivity4"
             android:exported="true"
@@ -37,7 +77,6 @@
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
-
         <activity
             android:name=".MainActivity3"
             android:exported="true"
@@ -46,17 +85,14 @@
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
-
         <activity
             android:name=".MainActivity2"
             android:exported="true"
             android:theme="@style/Theme.DoodleMate.NoActionBar">
-
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
-
         <activity
             android:name=".MainActivity"
             android:exported="true"
@@ -71,20 +107,14 @@
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
-
         <activity
             android:name=".MainActivity1"
             android:exported="true"
             android:theme="@style/Theme.DoodleMate.NoActionBar">
-
-
-
-
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
-
     </application>
 
 </manifest>
